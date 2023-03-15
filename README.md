@@ -37,5 +37,3 @@ Deliverables:
 - display songs and singers in lists; import data at the lowest level it's needed
 - set state of singer in singerList to show the one current karaoke singer (add microphone emoji)
 - then, make the "now playing" component functional; you have to lift state to accomplish that
-
-?? what's up with key on click?
