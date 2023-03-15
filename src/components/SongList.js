@@ -1,9 +1,14 @@
 import SongCard from './SongCard.js'
 import { songs } from '../data/data.js'
 
-function SongList() {
+function SongList({ onSetCurrentSong }) {
 
-    const songsDisplay = songs.map(song => <SongCard title={song.title} artist={song.artist} key={song.id} />)
+    const songsDisplay = songs.map(song => {
+        return <SongCard
+            onSetCurrentSong={onSetCurrentSong}
+            song={song}
+            key={song.id} />
+    })
     return (
         <div>
             <h1>Songs:</h1>
